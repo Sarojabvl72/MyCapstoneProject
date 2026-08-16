@@ -30,7 +30,7 @@ Machine learning and deep learning models address these challenges by learning c
       Banks must comply with strict anti‑fraud and cybersecurity regulations; failure results in fines and legal exposure.
 - Operational Efficiency:  
       Automated fraud detection reduces manual review workload and false positives, lowering operational costs.
-  - eal‑Time Protection:  
+  - Real‑Time Protection:  
       ML/DL models enable instant detection and blocking of suspicious transactions before losses occur.
 ---
 
@@ -53,8 +53,8 @@ Machine learning and deep learning models address these challenges by learning c
 * Investigation and recovery expenses
 * Regulatory fines for inadequate fraud controls
 * Long‑term revenue loss due to customer churn and reduced digital engagement
-
-Studies show that advanced AI‑driven fraud detection systems achieve 93–96% accuracy on real transaction datasets, significantly reducing losses and improving operational resilience
+  
+- Studies show that advanced AI‑driven fraud detection systems achieve 93–96% accuracy on real transaction datasets, significantly reducing losses and improving operational resilience
 ---
 ## 📁 Project Structure
 ---
