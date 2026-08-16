@@ -1,4 +1,5 @@
-# MyCapstoneProject - EDA & Fraud Detection Notebook — Comprehensive analysis of bank transaction data
+# CapstoneProject - 
+    #EDA & Fraud Detection Notebook — Comprehensive analysis of bank transaction data
 
 <p align="center"> 📊 EDA & Fraud Detection Notebook — Comprehensive analysis of bank transaction data</p>
 
