@@ -7,6 +7,10 @@
 ## Table of Contents
 
 - [Overview](#overview)
+- [Problem Statement](#🧩-problem-statement)
+- [Why Fraud Detection Models Are Critically Important](#🚨-why-fraud-detection-models-are-critically-important)
+- [Priority Problems to Solve](#🎯-priority-problems-to-solve)
+- [Financial Impact on Institutions](#💸-financial-impact-on-institutions)
 - [Project structure](#project-structure)
 - [Dataset](#dataset)
 - [Fraud logic](#fraud-logic)
@@ -24,9 +28,61 @@
 
 ## Overview
 
-This repository contains a Jupyter Notebook that performs Exploratory Data Analysis (EDA) and trains multiple machine-learning models to detect synthetic fraud flags on a structured bank transaction dataset. The notebook demonstrates data inspection, rule-based target creation, feature engineering, model training, evaluation, and visualization for interpretability.
+This repository contains a Jupyter Notebook that performs Exploratory Data Analysis (EDA) and trains multiple machine-learning models to detect synthetic fraud flags on a structured bank transaction dataset.
 
 Dataset size used in the notebook: 2,512 transactions (synthetic or anonymized for demonstration).
+
+---
+
+## 🧩 Problem Statement
+
+Online banking fraud has escalated due to the widespread adoption of digital channels, mobile banking, and instant payment systems. Fraudsters exploit vulnerabilities such as compromised credentials, device spoofing, synthetic identities, and rapid transaction sequences that bypass manual review. Traditional fraud detection systems—often static and rule‑based—struggle with:
+
+- Evolving fraud patterns that change faster than rules can be updated
+- High transaction velocity, making real‑time detection essential
+- Massive data volumes, requiring scalable analytics
+- Extreme class imbalance, where fraudulent transactions represent less than 0.5% of all activity
+- Concept drift, where user behavior changes over time
+- Adversarial behavior, where fraudsters intentionally mimic legitimate patterns
+
+Machine learning and deep learning models address these challenges by learning complex patterns, adapting to new fraud behaviors, and providing real‑time detection capabilities. Modern approaches include supervised learning, anomaly detection, graph neural networks, transformer‑based architectures, and federated learning for privacy‑preserving collaboration across institutions.
+
+## 🚨 Why Fraud Detection Models Are Critically Important
+
+Massive Financial Losses:  
+Financial institutions lose around 5% of annual revenue to fraud, totaling over $50 billion per year in the U.S..
+
+Customer Trust & Brand Reputation:  
+Fraud incidents erode customer confidence, leading to account closures and reduced digital adoption.
+
+Regulatory Pressure:  
+Banks must comply with strict anti‑fraud and cybersecurity regulations; failure results in fines and legal exposure.
+
+Operational Efficiency:  
+Automated fraud detection reduces manual review workload and false positives, lowering operational costs.
+
+Real‑Time Protection:  
+ML/DL models enable instant detection and blocking of suspicious transactions before losses occur.
+
+## 🎯 Priority Problems to Solve
+
+- Real‑time detection — Prevent fraudulent transactions before funds leave the account.
+- Reducing false positives — Avoid unnecessary customer friction and support costs.
+- Handling class imbalance — Fraud is rare; models must detect minority patterns accurately.
+- Adaptive learning — Models must evolve as fraud tactics change.
+- Scalability & latency — Systems must process millions of transactions per second.
+- Interpretability — Regulators and analysts need transparent reasoning behind model decisions.
+- Data privacy & security — Protect sensitive financial data while enabling collaborative detection.
+
+## 💸 Financial Impact on Institutions
+
+- Direct monetary losses from unauthorized transfers, account takeovers, and card‑not‑present fraud
+- Chargeback costs and reimbursement obligations
+- Investigation and recovery expenses
+- Regulatory fines for inadequate fraud controls
+- Long‑term revenue loss due to customer churn and reduced digital engagement
+
+Studies show that advanced AI‑driven fraud detection systems achieve 93–96% accuracy on real transaction datasets, significantly reducing losses and improving operational resilience
 
 ---
 
@@ -115,7 +171,7 @@ Each model reports accuracy, precision/recall/F1 (classification report), and pr
 
 ## Results
 
-The notebook prints and visualizes evaluation metrics for each model. For fraud detection tasks, pay special attention to precision and recall for the fraud (positive) class because fraud is typically the minority class.
+The notebook prints and visualizes evaluation metrics for each model. For fraud detection tasks, pay special attention to precision and recall for the fraud (positive) class because fraud is typically rare and false negatives are costly.
 
 ---
 
