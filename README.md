@@ -21,15 +21,13 @@
 - [Results](#results)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
 ## Overview
 
-This repository contains a Jupyter Notebook that performs Exploratory Data Analysis (EDA) and trains multiple machine-learning models to detect synthetic fraud flags on a structured bank transaction data.
+This repository contains a Jupyter Notebook that performs Exploratory Data Analysis (EDA) and trains multiple machine-learning models to detect synthetic fraud flags on a structured bank transacti[...]
 
 Dataset size used in the notebook: 2,512 transactions (synthetic or anonymized for demonstration).
 
@@ -37,7 +35,7 @@ Dataset size used in the notebook: 2,512 transactions (synthetic or anonymized f
 
 ## 🧩 Problem Statement
 
-Online banking fraud has escalated due to the widespread adoption of digital channels, mobile banking, and instant payment systems. Fraudsters exploit vulnerabilities such as compromised credentials, insecure channels, and social engineering.
+Online banking fraud has escalated due to the widespread adoption of digital channels, mobile banking, and instant payment systems. Fraudsters exploit vulnerabilities such as compromised credentia[...]
 
 - Evolving fraud patterns that change faster than rules can be updated
 - High transaction velocity, making real‑time detection essential
@@ -174,7 +172,7 @@ Each model reports accuracy, precision/recall/F1 (classification report), and pr
 
 ### 1. Overview
 
-The notebook applies seven supervised machine learning classifiers to detect potentially fraudulent bank transactions. The target variable — `FraudFlag` — is synthetic, constructed by scoring each transaction against six risk indicators and flagging those that trigger two or more.
+The notebook applies seven supervised machine learning classifiers to detect potentially fraudulent bank transactions. The target variable — `FraudFlag` — is synthetic, constructed by scoring[...]
 
 **Dataset at a glance:**
 
@@ -207,15 +205,15 @@ A **fraud_score ≥ 2** triggers `FraudFlag = 1`.
 
 **K-Nearest Neighbours (KNN, k=5):** Classifies by majority label of 5 nearest neighbours. Competitive accuracy; captures local fraud clusters but sensitive to high-cardinality one-hot features.
 
-**Support Vector Classifier (SVC, RBF kernel):** Finds maximum-margin hyperplane in RBF-transformed space. High accuracy and strong precision on fraud class; computationally expensive; recall on minority class can be lower.
+**Support Vector Classifier (SVC, RBF kernel):** Finds maximum-margin hyperplane in RBF-transformed space. High accuracy and strong precision on fraud class; computationally expensive; recall on minor[...]
 
-**Decision Tree:** Recursively splits feature space with `class_weight='balanced'` to handle imbalance. Very high training accuracy but prone to overfitting. Directly interpretable — can be audited as a rule flowchart.
+**Decision Tree:** Recursively splits feature space with `class_weight='balanced'` to handle imbalance. Very high training accuracy but prone to overfitting. Directly interpretable — can be audited [...]
 
-**Random Forest (200 trees):** Ensembles trees trained on random subsets. **Highest or joint-highest accuracy.** Excels because fraud is built from independent binary indicators — exactly what trees decompose naturally. Balanced weights ensure minority class is not overwhelmed.
+**Random Forest (200 trees):** Ensembles trees trained on random subsets. **Highest or joint-highest accuracy.** Excels because fraud is built from independent binary indicators — exactly what trees[...]
 
-**Bagging Classifier (50 Decision Trees):** Trains on bootstrap samples; aggregates by majority vote. Performance similar to Random Forest but without feature randomisation, yielding more correlated trees and slightly less variance reduction.
+**Bagging Classifier (50 Decision Trees):** Trains on bootstrap samples; aggregates by majority vote. Performance similar to Random Forest but without feature randomisation, yielding more correlated t[...]
 
-**Voting Classifier:** Combines Logistic Regression, Random Forest, and SVC via soft voting on probabilities. Consistently strong accuracy — ensemble diversity smooths individual model errors. When all three agree, confidence is very high.
+**Voting Classifier:** Combines Logistic Regression, Random Forest, and SVC via soft voting on probabilities. Consistently strong accuracy — ensemble diversity smooths individual model errors. When [...]
 
 ### 4. Expected Model Rankings
 
@@ -269,13 +267,13 @@ A **fraud_score ≥ 2** triggers `FraudFlag = 1`.
 
 ### 8. Summary
 
-The **Random Forest** and **Voting Classifier** emerge as the strongest models, offering the best balance of accuracy, fraud-class recall, and robustness. The **Decision Tree** remains most interpretable for compliance reporting.
+The **Random Forest** and **Voting Classifier** emerge as the strongest models, offering the best balance of accuracy, fraud-class recall, and robustness. The **Decision Tree** remains most inter[...]
 
 ---
 
 ## Results
 
-The notebook prints and visualizes evaluation metrics for each model. For fraud detection tasks, pay special attention to precision and recall for the fraud (positive) class because fraud is typically the minority class.
+The notebook prints and visualizes evaluation metrics for each model. For fraud detection tasks, pay special attention to precision and recall for the fraud (positive) class because fraud is typi[...]
 
 ---
 
@@ -305,20 +303,7 @@ jupyter lab   # or jupyter notebook
 
 ---
 
-## Contributing
-
-Contributions are welcome. Please open an issue or submit a pull request with clear descriptions and tests or reproducible examples when appropriate.
-
----
-
 ## License
 
 Add a license (e.g., MIT) to clarify reuse and distribution terms.
 
----
-
-## Contact
-
-Repository owner: `Sarojabvl72`
-
-For questions or feedback, open an issue in this repository.
