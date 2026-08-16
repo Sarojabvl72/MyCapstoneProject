@@ -8,6 +8,18 @@ This repository contains a Jupyter Notebook designed to perform **Exploratory Da
 
 ## 📁 Project Structure
 
+## Problem Statement
+
+Online banking fraud has escalated due to the widespread adoption of digital channels, mobile banking, and instant payment systems. Fraudsters exploit vulnerabilities such as compromised credentials, device spoofing, synthetic identities, and rapid transaction sequences that bypass manual review. Traditional fraud detection systems—often static and rule‑based—struggle with:
+
+- Evolving fraud patterns that change faster than rules can be updated
+- High transaction velocity, making real‑time detection essential
+- Massive data volumes, requiring scalable analytics
+- Extreme class imbalance, where fraudulent transactions represent less than 0.5% of all activity
+- Concept drift, where user behavior changes over time
+- Adversarial behavior, where fraudsters intentionally mimic legitimate patterns
+
+Machine learning and deep learning models address these challenges by learning complex patterns, adapting to new fraud behaviors, and providing real‑time detection capabilities. Modern approaches include supervised learning, anomaly detection, graph neural networks, transformer‑based architectures, and federated learning for privacy‑preserving collaboration across institutions
 
 ---
 
